@@ -12,7 +12,9 @@ const ReposList = ({reposList}) => {
           <ReposCard 
             repos={repos} 
             className="animated bounceInUp"
-            onClick={()=>{Router.push(`/repos?id=${repos.id}`)}}
+            onClick={()=>{
+              Router.push(`/repos?id=${repos.id}`)
+                          }}
           />
         </Grid.Column>
       )
